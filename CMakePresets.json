@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "ESP32D0WD",
+      "displayName": "ESP32-D0WD + 1.28 inch GC9A01 TFT",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/cmake-build-esp32d0wd",
+      "cacheVariables": {"CMAKE_BUILD_TYPE": "Release"}
+    }
+  ],
+  "buildPresets": [
+    {"name": "firmware", "configurePreset": "ESP32D0WD", "targets": ["firmware"]},
+    {"name": "upload", "configurePreset": "ESP32D0WD", "targets": ["upload"]}
+  ]
+}

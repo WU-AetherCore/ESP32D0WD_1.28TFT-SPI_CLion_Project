@@ -1,0 +1,24 @@
+# PlatformIO and firmware build output
+.pio/
+cmake-build-*/
+build/
+
+# IDE-local state
+.idea/
+.vscode/
+*.iml
+
+# Local network configuration and generated diagnostics
+dashboard_ip.txt
+build.log
+flash.log
+tft_capture.png
+ui_captures/
+tools/__pycache__/
+__pycache__/
+*.py[cod]
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
